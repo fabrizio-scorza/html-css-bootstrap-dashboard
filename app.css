@@ -1,7 +1,10 @@
 /*VAR*******************************************************/
 :root{
-    --headbar:74px;
     --lightgray:#F8F9FA;
+    --headbar-h:74px;
+    --sidebar-lg-w:150px;
+    --sidebar-w:68px;
+
 }
 
 
@@ -9,7 +12,7 @@
 
 /*HEADER****************************************************/
 .ms_app-header{
-    height: var(--headbar);
+    height: var(--headbar-h);
     position: sticky;
     top: 0;
     background-color: var(--lightgray);
@@ -18,7 +21,7 @@
 
 /*MAIN*******************************************************/
 .ms_app-main{
-    height: calc(100% - var(--headbar));
+    height: calc(100% - var(--headbar-h));
 }
 
 
@@ -26,11 +29,22 @@
 .ms_app-side{
     background-color: #051E34;
     background-image: url(./img/sidebar-bg.png);
-    width: 68px;
+    width: var(--sidebar-w)
 }
 @media (min-width: 992px){
     .ms_app-side{
-        width: 150px;
+        width: var(--sidebar-lg-w)
+    }
+}
+
+
+/*APP-BODY**************************************************/
+.ms_app-body{
+    width: calc(100% - var(--sidebar-w));
+}
+@media (min-width: 992px){
+    .ms_app-body{
+        width: calc(100% - var(--sidebar-lg-w));
     }
 }
 
