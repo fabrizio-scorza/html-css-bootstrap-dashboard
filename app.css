@@ -1,1 +1,21 @@
+/*VAR*******************************************************/
+:root{
+    --lightgray:#F8F9FA;
+}
 /*RESET*****************************************************/
+
+/*HEADER****************************************************/
+.ms_app-header{
+    height: 70px;
+    position: sticky;
+    top: 0;
+    background-color: var(--lightgray);
+}
+
+/*DEBUG*****************************************************/
+.ms_app-header nav{
+    background-color: aquamarine;
+}
+.ms_app-header nav >*{
+    background-color: aqua;
+}

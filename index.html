@@ -19,10 +19,22 @@
 			/>
 			<link rel="stylesheet" href="app.css" />
 	</head>
-	<body>
-		<div id="app">
-			<header class="ms_app-header">
-
+	<body class="debug">
+		<div id="app" class="vh-100">
+			<header class="ms_app-header py-4">
+				<!-- header con navbar sempre fisso-->
+				<nav class="d-flex align-items-center justify-content-between">
+					<div>
+						<img src="" alt="Logo Desktop"> <!--Visibile solo desktop-->
+						<img src="" alt="Logo Mobile"> <!--Nascosto desktop-->
+					</div>
+					<div>
+						barra di ricerca 
+					</div>
+					<div>
+						lista icone link <!--visibili desktop tutte tranne campanella sempre visibile-->
+					</div>
+				</nav>
 			</header>
 			<main class="ms_app-main">
 				<aside class="ms_app-side">
@@ -33,7 +45,7 @@
 
 					</div>
 					<div class="ms_app-content">
-						
+
 					</div>
 				</div>
 			</main>
