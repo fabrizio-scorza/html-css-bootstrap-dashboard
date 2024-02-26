@@ -28,6 +28,11 @@
     background-image: url(./img/sidebar-bg.png);
     width: 68px;
 }
+@media (min-width: 992px){
+    .ms_app-side{
+        width: 150px;
+    }
+}
 
 
 /*DEBUG*****************************************************/
