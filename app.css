@@ -1,16 +1,34 @@
 /*VAR*******************************************************/
 :root{
+    --headbar:74px;
     --lightgray:#F8F9FA;
 }
+
+
 /*RESET*****************************************************/
 
 /*HEADER****************************************************/
 .ms_app-header{
-    height: 70px;
+    height: var(--headbar);
     position: sticky;
     top: 0;
     background-color: var(--lightgray);
 }
+
+
+/*MAIN*******************************************************/
+.ms_app-main{
+    height: calc(100% - var(--headbar));
+}
+
+
+/*SIDEBAR****************************************************/
+.ms_app-side{
+    background-color: #051E34;
+    background-image: url(./img/sidebar-bg.png);
+    width: 68px;
+}
+
 
 /*DEBUG*****************************************************/
 .ms_app-header nav{
