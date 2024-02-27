@@ -19,7 +19,7 @@
 			/>
 			<link rel="stylesheet" href="app.css" />
 	</head>
-	<body class="debug">
+	<body>
 		<div id="app" class="vh-100">
 			<header class="ms_app-header z-3 d-flex align-items-center">
 				<!-- header con navbar sempre fisso-->
@@ -158,7 +158,7 @@
 										<h4>Prossime Classi</h4>
 									</div>
 									<div class="card-body">
-										<table class="table">
+										<table class="table ms_fs-sm">
 											<!-- inizio tabella -->
 											<thead>
 												<tr>
@@ -354,7 +354,7 @@
 									</div>
 									<div class="card-body">
 										<!-- checkbox list -->
-										<ul class="list-group ms_fs-sm fw-semibold">
+										<ul class="list-group ms_fs-xs fw-semibold">
 											<li class="list-group-item d-flex gap-1">
 											  <input class="form-check-input me-1" type="checkbox" value="" id="first-check">
 											  <label class="form-check-label" for="first-check">Kickoff nuove classi</label>
@@ -370,9 +370,18 @@
 										  </ul>
 									</div>
 								</div>
-								<div class="card">
-									<img src="./img/stats.jpeg" class="card-img-top" alt="">
-  									<div class="card-body">
+								<div class="card p-2">
+									<!-- card con immagine testo lista e link  -->
+  									<div class="card-body p-0 ms_card-body">
+										<img src="./img/stats.jpeg" class="card-img-top" alt="">
+										<h6 class="card-title px-1">Utenti attivi</h6>
+										<p class="card-text fw-semibold ms_fs-xs px-1">Lista degli utenti attivi in piattaforma nell'ultimo mese</p>
+										<ul class="list-group ms_fs-xs">
+											<li class="list-group-item px-1">Gennaio:1200</li>
+											<li class="list-group-item px-1">Febbraio:800</li>
+											<li class="list-group-item px-1">Marzo:1500</li>
+										</ul>
+										<a href="#" class="ms_card-link ms_fs-xs px-1">Visualizza report approfondito</a>
 									</div>
 								</div>
 							</div>
