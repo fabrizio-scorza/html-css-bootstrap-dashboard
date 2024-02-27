@@ -133,9 +133,6 @@ a{
 .ms_app-content{
     background-color: var(--lightgray);
 }
-.ms_app-content tr:hover{
-    background-color: var(--lightgray);
-}
 
 .ms_table-btn{
     color:#6C757D;
@@ -152,11 +149,16 @@ a{
 .ms_app-content .ms_icon{
   left:95%;
 }
-
 .ms_accordian p{
     border-bottom: 1px solid var(--border-gray);
     padding-bottom:12px;
 }
+.ms_accordian p:hover{
+    background-color: var(--blue);
+    border: 2px solid #051E34;
+    opacity: 75%;
+}
+
 .ms_card-body{
     border: 1px solid var(--border-gray);
     border-radius: 4px;
