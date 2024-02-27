@@ -22,6 +22,16 @@ a{
  color: currentColor;
 }
 
+
+/*UTILITIES*****************************************************/
+.ms_icon{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    pointer-events: none;
+}
+
+
 /*HEADER****************************************************/
 .ms_app-header{
     height: var(--headbar-h);
@@ -37,11 +47,8 @@ a{
 }
 
 .ms_app-header .ms_icon{
-    position: absolute;
-    top: 50%;
     left: 12px;
     transform: translateY(-50%);
-    pointer-events: none;
 }
 .ms_app-header .ms_input{
     height: 42px;
@@ -117,7 +124,7 @@ a{
     margin-right: 8px;  
 }
 .ms_app-content .ms_icon{
-    pointer-events: none;
+  left:95%;
 }
 .ms_accordian p{
     border-bottom: 1px solid #D6D6D6;
