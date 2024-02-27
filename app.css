@@ -88,6 +88,10 @@ a{
         width: var(--sidebar-lg-w)
     }
 }
+.ms_app-side li:hover{
+    background-color: var(--lightgray);
+    color: black;
+}
 
 
 /*APP-BODY**************************************************/
@@ -115,6 +119,7 @@ a{
 .ms_btn{
     padding: 2px 12px 6px;
 }
+
 #form-new-student{
     width: 100%;
    }
@@ -126,6 +131,9 @@ a{
 
 /*APP-CONTENT************************************************/
 .ms_app-content{
+    background-color: var(--lightgray);
+}
+.ms_app-content tr:hover{
     background-color: var(--lightgray);
 }
 
