@@ -100,19 +100,30 @@ a{
 .ms_fs-sm{
     font-size: 14px;
 }
+
+
 /*APP-CONTENT************************************************/
 .ms_app-content{
     background-color: var(--lightgray);
 }
-
-
+.ms_table-btn{
+    color:#6C757D;
+    border-color: #6C757D;
+}
+.ms_table-img{
+    width: 24px;
+    aspect-ratio: 1/1;
+    object-fit: contain;
+    margin-right: 8px;  
+}
+.ms_app-content .ms_icon{
+    pointer-events: none;
+}
+.ms_accordian p{
+    border-bottom: 1px solid #D6D6D6;
+    padding-bottom:12px;
+}
 /*DEBUG*****************************************************/
-.col-lg-9 .card:first-of-type{
-    height:450px ;
-}
-.col-lg-9 .card:last-of-type{
-    height:350px ;
-}
 .col-lg-3 .card:first-of-type{
     height: 300px;
 }
