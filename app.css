@@ -39,6 +39,7 @@ a{
     font-size: 12px;
 }
 
+
 /*HEADER****************************************************/
 .ms_app-header{
     height: var(--headbar-h);
@@ -114,7 +115,14 @@ a{
 .ms_btn{
     padding: 2px 12px 6px;
 }
-
+#form-new-student{
+    width: 100%;
+   }
+@media (min-width: 992px){
+    #form-new-student{
+     width: 60%;
+    }
+}
 
 /*APP-CONTENT************************************************/
 .ms_app-content{

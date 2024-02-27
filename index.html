@@ -140,8 +140,103 @@
 									<button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
 								</div>
 								<div class="offcanvas-body">
-									<form class="form-control" action="">
-										<!-- da inserire il form -->
+									<form class="form-control container-fluid" action="">
+										<!-- inizio del form -->
+										<div class="row row-gap-3">
+											<div class="col col-md-6">
+												<label for="nome" class="form-label">Nome</label>
+												<input type="text" class="form-control" id="nome">		
+											</div>
+											<div class="col col-md-6">
+												<label for="cognome" class="form-label">Cognome</label>
+												<input type="text" class="form-control" id="cognome">		
+											</div>
+											<div class="col col-md-6">
+												<label for="mail" class="form-label">E-mail</label>
+												<div class="input-group">
+													<span class="input-group-text" id="mail">@</span>
+  													<input type="email" class="form-control" aria-label="mail" aria-describedby="mail">
+												</div>																								
+											</div>
+											<div class="col col-md-6">
+												<label for="password" class="form-label">Password</label>
+												<input type="password" class="form-control" id="password">		
+											</div>
+											<div class="col col-md-6">
+												<label for="mail" class="form-label"> Ripeti e-mail</label>
+												<div class="input-group">
+													<span class="input-group-text" id="mail">@</span>
+  													<input type="email" class="form-control" aria-label="mail" aria-describedby="mail">
+												</div>																								
+											</div>
+											<div class="col col-md-6">
+												<label for="password" class="form-label"> Ripeti password</label>
+												<input type="password" class="form-control" id="password">		
+											</div>
+											<div class="col-12">
+												<label for="indirizzo" class="form-label">Indirizzo</label>
+												<input type="text" class="form-control" id="indirizzo">		
+											</div>
+											<div class="col col-md-6">
+												<label for="citta" class="form-label">Città</label>
+												<input type="text" class="form-control" id="citta">		
+											</div>
+											<div class="col col-md-4">
+												<label for="stato" class="form-label">Stato</label>
+												<select class="form-select" id="stato">
+													<option selected>Scegli...</option>
+													<option value="1">Altro</option>
+													<option value="2">Austria</option>
+													<option value="3">Belgio</option>
+													<option value="4">Bulgaria</option>
+													<option value="5">Cipro</option>
+													<option value="6">Croazia</option>
+													<option value="7">Danimarca</option>
+													<option value="8">Estonia</option>
+													<option value="9">Finlandia</option>
+													<option value="10">Francia</option>
+													<option value="11">Germania</option>
+													<option value="12">Grecia</option>
+													<option value="13">Irlanda</option>
+													<option value="14">Italia</option>
+													<option value="15">Lettonia</option>
+													<option value="16">Lituania</option>
+													<option value="17">Lussemburgo</option>
+													<option value="18">Malta</option>
+													<option value="19">Paesi Bassi</option>
+													<option value="20">Polonia</option>
+													<option value="21">Portogallo</option>
+													<option value="22">Republica Ceca</option>
+													<option value="23">Romania</option>
+													<option value="24">Slovacchia</option>
+													<option value="25">Slovenia</option>
+													<option value="26">Spagna</option>
+													<option value="27">Svezia</option>
+													<option value="28">Ungheria</option>
+												</select>
+											</div>
+											<div class="col col-md-2">
+												<label for="cap" class="form-label">CAP</label>
+												<input type="text" class="form-control" id="cap">		
+											</div>
+											<div class="col-12">
+												<label for="file01" class="form-label">Foto</label>												
+												<input type="file" class="form-control" id="file01">
+											</div>
+											<div class="col-12">
+												<div class="form-check">
+													<input class="form-check-input" type="checkbox" id="inline-check">
+													<label class="form-check-label" for="inline-check">
+													  Seleziona per proseguire
+													</label>
+												</div>
+											</div>
+											<div class="col-12">
+												<button type="submit" class="btn btn-primary">Salva</button>
+												<button type="submit" class="btn btn-warning">Svuota</button>
+											</div>
+										</div>
+										<!-- FINE FORM -->
 									</form>
 								</div>
 							</div>
