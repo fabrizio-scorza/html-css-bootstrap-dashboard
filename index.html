@@ -62,19 +62,37 @@
 			</header>
 			<main class="ms_app-main d-flex">
 				<!-- diviso in due parti una sidebar e il corpo dell'app -->
-				<aside class="ms_app-side d-flex flex-column justify-content-between text-white">
+				<aside class="ms_app-side d-flex flex-column justify-content-between text-white p-3">
 					<!-- sidebar con lista pagine settings grandezza unica sm e md più grande lg-->
 					<div>
 						<ul>
 							<!-- icone sempre visibili e testo visibile solo desktop  -->
-							<li>Home</li>
-							<li>Stats</li>
-							<li>Signals</li>
+							<li class="pb-2">
+								<a href="">
+									<i class="fa-solid fa-house pe-3"></i>
+									<span class="d-none d-lg-inline">Home</span>
+								</a>
+							</li>
+							<li class="pb-2">
+								<a href="">
+									<i class="fa-solid fa-chart-simple ps-1 pe-3"></i>
+									<span class="d-none d-lg-inline">Stats</span>
+								</a>
+							</li>
+							<li>
+								<a href="">
+									<i class="fa-solid fa-signal pe-3"></i>
+									<span class="d-none d-lg-inline">Signals</span>
+								</a>
+							</li>
 						</ul>
 					</div>
 					<div>
 						<!-- icona sempre visibili e testo visibile solo desktop  -->
-						Admin
+						<a href="">
+							<i class="fa-solid fa-gear pe-3"></i>
+							<span class="d-none d-lg-inline">Admin</span>
+						</a>
 					</div>
 				</aside>
 				<div class="ms_app-body h-100 overflow-y-scroll">
