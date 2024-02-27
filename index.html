@@ -21,18 +21,42 @@
 	</head>
 	<body class="debug">
 		<div id="app" class="vh-100">
-			<header class="ms_app-header py-4">
+			<header class="ms_app-header z-3 d-flex align-items-center">
 				<!-- header con navbar sempre fisso-->
-				<nav class="d-flex align-items-center justify-content-between">
+				<nav class="d-flex align-items-center justify-content-between gap-4 flex-grow-1 px-3 bg-white">
 					<div>
-						<img src="" alt="Logo Desktop"> <!--Visibile solo desktop-->
-						<img src="" alt="Logo Mobile"> <!--Nascosto desktop-->
+						<img class="d-none d-lg-block ms_logo" src="./img/logo.svg" alt="Logo Desktop"> <!--Visibile solo desktop-->
+						<img class="d-lg-none ms_logo-mobile" src="./img/mobile-logo.png" alt="Logo Mobile"> <!--Nascosto desktop-->
+					</div>
+					<div class="flex-grow-1 position-relative">
+						<!-- searchbar -->
+						<i class="fa-solid fa-magnifying-glass ms_icon"></i>
+						<input class="ms_input" type="text" placeholder="Prova a cercare: Lezioni di Laravel">
 					</div>
 					<div>
-						barra di ricerca 
-					</div>
-					<div>
-						lista icone link <!--visibili desktop tutte tranne campanella sempre visibile-->
+						<ul class="d-flex gap-4">
+							<!-- lista di icone visibili desktop tutte tranne campanella sempre visibile-->
+							<li class="d-none d-lg-block">
+								<a href="">
+									<i class="fa-solid fa-list-ul"></i>
+								</a>
+							</li>
+							<li class="d-none d-lg-block">
+								<a href="">
+									<i class="fa-solid fa-circle-question"></i>
+								</a>
+							</li>
+							<li class="d-none d-lg-block">
+								<a href="">
+									<i class="fa-solid fa-ellipsis-vertical"></i>
+								</a>
+							</li>
+							<li>
+								<a href="">
+									<i class="fa-solid fa-bell"></i>
+								</a>
+							</li>
+						</ul> 
 					</div>
 				</nav>
 			</header>
@@ -53,7 +77,7 @@
 						Admin
 					</div>
 				</aside>
-				<div class="ms_app-body">
+				<div class="ms_app-body h-100 overflow-y-scroll">
 					<div class="ms_app-top container-fluid bg-primary">
 						<!-- intestazione app con unica colonna in sm e 3 colonne da md -->
 						<div class="row row-cols-1 row-cols-md-3 g-0">
