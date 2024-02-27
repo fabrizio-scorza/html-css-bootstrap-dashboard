@@ -85,6 +85,21 @@ a{
 }
 
 
+/*APP-TOP****************************************************/
+.ms_badge{
+    background-color:#165BBA;
+    font-size: 12px;
+    font-weight: 500;
+}
+.ms_app-top li{
+    padding-right: 6px;
+}
+.ms_btn{
+    padding: 2px 12px 6px;
+}
+.ms_fs-sm{
+    font-size: 14px;
+}
 /*APP-CONTENT************************************************/
 .ms_app-content{
     background-color: var(--lightgray);
