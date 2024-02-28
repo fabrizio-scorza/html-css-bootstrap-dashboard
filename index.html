@@ -102,11 +102,11 @@
 				<div class="ms_app-body h-100 overflow-y-scroll">
 					<div class="ms_app-top container-fluid bg-primary">
 						<!-- intestazione app con unica colonna in sm e 3 colonne da md -->
-						<div class="row row-cols-1 row-cols-md-3 g-0 text-white py-3">
-							<div class="col col-lg-6">
+						<div class="row g-0 text-white py-3">
+							<div class="col-12 col-lg-6">
 								<!-- scritta con badge -->
 								<h1 class="fs-3">Boolean <span class="badge rounded-pill ms_badge">Piano blaze</span></h1>
-								<ul class="d-flex">
+								<ul class="d-flex flex-wrap">
 									<!-- lista di badge tutti visibili solo desktop tranne il + da md visibili solo quelli prima e dopop l'icona -->
 									<li>
 										<span class="badge rounded-pill ms_badge">3 app</span>
@@ -128,12 +128,12 @@
 									</li>
 								</ul>
 							</div>
-							<div class="col col-lg-3 px-md-4">
+							<div class="col-12 col-lg-3">
 								<!-- contatore studenti online -->
 								<h3 class="ms_fs-sm">Studenti online negli ultimi 30 minuti</h3>
 								<p class="fs-2 m-0">125</p>
 							</div>
-							<div class="col col-lg-3 order-first order-md-last px-md-5">
+							<div class="col-12 col-lg-3 order-first order-md-last">
 								<!-- azione aggiungi studente -->
 								<p class="ms_fs-sm">Nuovo studente <a class="btn btn-outline-light ms_btn text-center ms-1" data-bs-toggle="offcanvas" href="#form-new-student" role="button" aria-controls="form-new-student">+</a></p>
 							</div>
@@ -147,45 +147,45 @@
 									<form class="form-control container-fluid" action="">
 										<!-- inizio del form -->
 										<div class="row row-gap-3">
-											<div class="col col-md-6">
+											<div class="col-12 col-md-6">
 												<label for="nome" class="form-label">Nome</label>
 												<input type="text" class="form-control" id="nome">		
 											</div>
-											<div class="col col-md-6">
+											<div class="col-12 col-md-6">
 												<label for="cognome" class="form-label">Cognome</label>
 												<input type="text" class="form-control" id="cognome">		
 											</div>
-											<div class="col col-md-6">
+											<div class="col-12 col-md-6">
 												<label for="mail" class="form-label">E-mail</label>
 												<div class="input-group">
 													<span class="input-group-text" id="mail">@</span>
   													<input type="email" class="form-control" aria-label="mail" aria-describedby="mail">
 												</div>																								
 											</div>
-											<div class="col col-md-6">
+											<div class="col-12 col-md-6">
 												<label for="password" class="form-label">Password</label>
 												<input type="password" class="form-control" id="password">		
 											</div>
-											<div class="col col-md-6">
-												<label for="mail" class="form-label"> Ripeti e-mail</label>
+											<div class="col-12 col-md-6">
+												<label for="mail-2" class="form-label"> Ripeti e-mail</label>
 												<div class="input-group">
-													<span class="input-group-text" id="mail">@</span>
-  													<input type="email" class="form-control" aria-label="mail" aria-describedby="mail">
+													<span class="input-group-text" id="mail-2">@</span>
+  													<input type="email" class="form-control" aria-label="mail-2" aria-describedby="mail-2">
 												</div>																								
 											</div>
-											<div class="col col-md-6">
-												<label for="password" class="form-label"> Ripeti password</label>
-												<input type="password" class="form-control" id="password">		
+											<div class="col-12 col-md-6">
+												<label for="password-2" class="form-label"> Ripeti password</label>
+												<input type="password" class="form-control" id="password-2">		
 											</div>
 											<div class="col-12">
 												<label for="indirizzo" class="form-label">Indirizzo</label>
 												<input type="text" class="form-control" id="indirizzo">		
 											</div>
-											<div class="col col-md-6">
+											<div class="col-12 col-md-6">
 												<label for="citta" class="form-label">Città</label>
 												<input type="text" class="form-control" id="citta">		
 											</div>
-											<div class="col col-md-4">
+											<div class="col-12 col-md-4">
 												<label for="stato" class="form-label">Stato</label>
 												<select class="form-select" id="stato">
 													<option selected>Scegli...</option>
@@ -219,7 +219,7 @@
 													<option value="28">Ungheria</option>
 												</select>
 											</div>
-											<div class="col col-md-2">
+											<div class="col-12 col-md-2">
 												<label for="cap" class="form-label">CAP</label>
 												<input type="text" class="form-control" id="cap">		
 											</div>
@@ -248,8 +248,8 @@
 					</div>
 					<div class="ms_app-content container-fluid">
 						<!-- corpo principale della dashboard con due colonne  -->
-						<div class="row row-cols-1 row-cols-lg-2 py-4">
-							<div class="col col-lg-9">
+						<div class="row py-4">
+							<div class="col-12 col-lg-9">
 								<!-- card grandi della colonna più larga  -->
 								<div class="card mb-4">
 									<!-- card con tabella -->
@@ -265,7 +265,7 @@
 													<th class="d-none d-md-table-cell" scope="col">Data inizio</th>
 													<th class="d-none d-md-table-cell" scope="col">Roi</th>
 													<th scope="col">Stato</th>
-													<th scope="col">Azioni</th>
+													<th class="ms_action-col" scope="col">Azioni</th>
 											  	</tr>
 											</thead>
 											<tbody>
@@ -416,12 +416,12 @@
 											</div>
 											<div class="accordian-item">
 												<p class="accordian-header position-relative">
-													<button class="accordion-button" type="button" data-bs-toggle="collapse" 				data-bs-target="#collapse-text2" aria-expanded="false" aria-controls="collapse-text2">
+													<button class="accordion-button" type="button" data-bs-toggle="collapse" 				data-bs-target="#collapse-text-2" aria-expanded="false" aria-controls="collapse-text-2">
 														Come posso accedere alle informazioni del mio account?
 													</button>
 													<i class="fa-solid fa-chevron-down ms_icon"></i>
 												</p>
-												<div id="collapse-text2" class="accordion-collapse collapse" data-bs-parent="#faq">
+												<div id="collapse-text-2" class="accordion-collapse collapse" data-bs-parent="#faq">
 													<div class="accordion-body">
 													  <p>Clicca sull'icona della campanella</p>
 													</div>
@@ -429,12 +429,12 @@
 											</div>
 											<div class="accordian-item">
 												<p class="accordian-header position-relative">
-													<button class="accordion-button" type="button" data-bs-toggle="collapse" 				data-bs-target="#collapse-text3" aria-expanded="false" aria-controls="collapse-text3">
+													<button class="accordion-button" type="button" data-bs-toggle="collapse" 				data-bs-target="#collapse-text-3" aria-expanded="false" aria-controls="collapse-text-3">
 														Posso usare questa dashboard mobile?
 													</button>
 													<i class="fa-solid fa-chevron-down ms_icon"></i>
 												</p>
-												<div id="collapse-text3" class="accordion-collapse collapse" data-bs-parent="#faq">
+												<div id="collapse-text-3" class="accordion-collapse collapse" data-bs-parent="#faq">
 													<div class="accordion-body">
 													  <p>Certo, tutta la dahboard è ideata per essere visualizzata su qualsiasi dispositivo</p>
 													</div>
@@ -445,7 +445,7 @@
 									</div>
 								</div>
 							</div>
-							<div class="col col-lg-3">
+							<div class="col-12 col-lg-3">
 								<!-- card piccole della colonna più stretta -->
 								<div class="card mb-4">
 									<div class="card-header">

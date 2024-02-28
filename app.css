@@ -133,6 +133,9 @@ a{
 .ms_app-content{
     background-color: var(--lightgray);
 }
+.ms_action-col{
+    width: 90px;
+}
 
 .ms_table-btn{
     color:#6C757D;
